@@ -24,10 +24,14 @@
 </head>
 <body>
     <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+        <i class="fa fa-bars"></i>
+    </a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
+                <i class="fa fa-times"></i>
+            </a>
             <li class="sidebar-brand">
                 <a href="#top"  onclick = $("#menu-close").click(); >Start</a>
             </li>
@@ -35,10 +39,10 @@
                 <a href="#top" onclick = $("#menu-close").click(); >Home</a>
             </li>
             <li>
-                <a href="#about" onclick = $("#menu-close").click(); >About</a>
+                <a href="#services" onclick = $("#menu-close").click(); >Favorites</a>
             </li>
             <li>
-                <a href="#services" onclick = $("#menu-close").click(); >Favorites</a>
+                <a href="mailto:lu.dev@outlook.com" onclick = $("#menu-close").click(); >Email Me</a>
             </li>
         </ul>
     </nav>
@@ -164,6 +168,7 @@
     $("#menu-close").click(function(e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
+
     });
 
     // Opens the sidebar menu
@@ -171,6 +176,7 @@
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
     });
+
 
     // Scrolls to the selected menu item on the page
     $(function() {
