@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Lucky521</title>
+    <meta name="description" content="Lucky personal site">
+    <meta name="author" content="Lucky521">
+    <title>Lucky's FrontPage</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -66,13 +66,25 @@
         </div>
     </header>
 
-    <!-- About -->
+    <!-- About Me -->
     <section id="about" class="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>I Love Learning & Thinking & Coding & Solving!</h2>
-                    <p class="lead">Algorithm, Programming, Linux, Math, Network...</a>.</p>
+                    <h2 class="text-justify"><small>
+                        Hi, my name is Lucky. I am a software engineer living in China. My current job is related to virtualization platform and infrastructure. My interests lie in virtualization, network protocol, distributed system and machine learning. I have two blog sites, 
+                        <a href="https://lucky521.github.io/blog" target="_blank">one</a> 
+                        recording my technical articles and 
+                        <a href="http://blog.csdn.net/ojshilu" target="_blank">the others</a> 
+                        recording my history of solving algorithm questions. Randomly I write topics other than technology in my 
+                        <a onmouseup="show_right();">WeChat</a>
+                        . I create or participate in 
+                        <a href="https://github.com/lucky521" target="_blank">open source projects</a> 
+                        in my spare time, involving Windows/Linux/Web/Mobile development.
+                        If you have suggestions or opinions on my articles or projects, please feel free to
+                        <a href="http://lucky521.github.io/blog/tip-wall.html" target="_blank">leave me a message</a> or 
+                        <a href="mailto:lu.dev@outlook.com">Email me</a>.
+                    </small></h2>
                 </div>
             </div>
             <!-- /.row -->
@@ -80,7 +92,7 @@
         <!-- /.container -->
     </section>
 
-    <!-- Favorites -->
+    <!-- My Favorites -->
     <section id="services" class="services bg-primary">
         <div class="container">
             <div class="row text-center">
@@ -157,7 +169,8 @@
     <!-- Callout -->
     <aside class="callout">
         <div class="text-vertical-center">
-            <h1>Stay Hungry, Stay Foolish.</h1>
+            <h2>I Love Learning & Thinking & Coding & Solving!</h2>
+            <p class="lead">Algorithm, Programming, Linux, Math, Network...</a>.</p>
         </div>
     </aside>
 
@@ -182,6 +195,12 @@
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
     });
+
+    
+    function show_right(e) {
+         //e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");       
+    };
 
 
     // Scrolls to the selected menu item on the page
